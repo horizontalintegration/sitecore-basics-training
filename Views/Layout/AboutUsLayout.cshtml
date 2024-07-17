@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc;
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <div>
+        @{
+         
+            @Html.Sitecore().Rendering("{0A78FCEC-10B6-4C4B-A878-2CC46E032824}", new
+       {
+           Cacheable = true,
+           Cache_VaryByData = true,
+           DataSource = "{89A801E4-3D24-403A-924D-442EB186D84D}"
+       })
+        }
+
+      
+    </div>
+</body>
+</html>
