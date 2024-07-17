@@ -1,0 +1,26 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Html.Sitecore().Field("Title", Model.Item)</title>
+    @* Optionally include a link to an external CSS file here *@
+</head>
+<body>
+  
+    <div class="container">
+        <div class="col-left">
+            @Html.Sitecore().DynamicPlaceholder("left-col")
+        </div>
+        <div class="col-right">
+            @Html.Sitecore().DynamicPlaceholder("right-col")
+        </div>
+    </div>
+    
+</body>
+</html>
