@@ -1,15 +1,25 @@
 {
-  "namespace": "Project.DemoSite",
+  "namespace": "Project.SC_Playground",
   "items": {
     "includes": [
       {
         "name": "content",
-        "path": "/sitecore/content/Home/Horizontal Training/DemoSite",
+        "path": "/sitecore/content/Horizontal Training/SC_Playground",
         "rules": [
           {
-            "path": "/New Data",
+            "path": "/Home",
+            "scope": "SingleItem",
+            "allowedPushOperations": "createonly"
+          },
+          {
+            "path": "/Settings",
+            "scope": "SingleItem",
+            "allowedPushOperations": "createonly"
+          },
+          {
+            "path": "/Data",
             "scope": "ItemAndDescendants",
-            "allowedPushOperations": "createUpdateAndDelete"
+            "allowedPushOperations": "createAndUpdate"
           },
           {
             "path": "*",
@@ -19,12 +29,42 @@
       },
       {
         "name": "templates",
-        "path": "/sitecore/templates/Project"
+        "path": "/sitecore/templates",
+        "rules": [
+          {
+            "path": "/Feature",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "createonly"
+          },
+          {
+            "path": "/Foundation",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "createonly"
+          },
+          {
+            "path": "/Project",
+            "scope": "ItemAndDescendants",
+            "allowedPushOperations": "createonly"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
       },
       {
         "name": "renderings",
-        "path": "/sitecore/layout/Renderings/Project"
+        "path": "/sitecore/layout/Renderings/Feature/SC_Playground"
+      },
+      {
+        "name": "layouts",
+        "path": "/sitecore/layout/Layouts/Project/SC_Playground"
+      },
+      {
+        "name": "placeholder-settings",
+        "path": "/sitecore/layout/Placeholder Settings/Project/SC_Playground"
       }
+
     ]
   }
 }

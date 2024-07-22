@@ -1,5 +1,6 @@
 ﻿@model Sitecore.Mvc.Presentation.RenderingModel
 
+@*Using View Rendering (Static Binding in a MainLayout.cshtml) = ~/Views/Promo Component/Promo.cshtml *@
 @{
     var rc = Sitecore.Mvc.Presentation.RenderingContext.CurrentOrNull;
     if (rc != null)
@@ -51,35 +52,35 @@
 }
 
 @*******************************************************************Promo HTML******************************************************************
-    <div class="thumbnail">
-        <a href="Event-Detail.html">
-            <img src="../Images/Skiing-the-Himalayas.jpg" class="img-responsive" alt="Skiing in the Himalayas" width="500" height="333">
-        </a>
-        <div class="caption">
-            <h3 class="teaser-heading">Skiing the Himalayas</h3>
-            <p>
-                The Himalayan Mountains offer the highest altitude skiing and snowboarding in the world. Here, you are surrounded by the largest and steepest mountains on earth and the views are unparalleled. Because the mountains are so high, the runs are long. The geographical location and the heavy snowfall make Gulmarg’s ski runs the best in the Himalayas, if not the world. <br>
-                Our journey to Gulmarg from Srinagar is perhaps the most enchanting part of the trip. You will see picturesque villages, spectacular mountain views, and forested slopes on this tour through the unique landscape of the Himalayas.
-            </p>
-            <a href="Event-Detail.html" class="btn btn-default">Read more</a>
+        <div class="thumbnail">
+            <a href="Event-Detail.html">
+                <img src="../Images/Skiing-the-Himalayas.jpg" class="img-responsive" alt="Skiing in the Himalayas" width="500" height="333">
+            </a>
+            <div class="caption">
+                <h3 class="teaser-heading">Skiing the Himalayas</h3>
+                <p>
+                    The Himalayan Mountains offer the highest altitude skiing and snowboarding in the world. Here, you are surrounded by the largest and steepest mountains on earth and the views are unparalleled. Because the mountains are so high, the runs are long. The geographical location and the heavy snowfall make Gulmarg’s ski runs the best in the Himalayas, if not the world. <br>
+                    Our journey to Gulmarg from Srinagar is perhaps the most enchanting part of the trip. You will see picturesque villages, spectacular mountain views, and forested slopes on this tour through the unique landscape of the Himalayas.
+                </p>
+                <a href="Event-Detail.html" class="btn btn-default">Read more</a>
+            </div>
         </div>
-    </div>
-    
- ******************************************************************Access field Types******************************************************************   
-https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/access-a-field-using-the-fieldrenderer.html
-@Html.Sitecore().Field("MyImageField", new { w = 160, h = 160 })
-@Html.Sitecore().Field("MyLinkField", new
-{
-    @class = "red-link"
-})
-@Html.Sitecore().Field("MyDateField", new { format = "MMM dd,yyyy" })
-@Html.Sitecore().Field("MySingleLineTextField", Item)
-@Html.Sitecore().Field("MyRichTextField")
-@Html.Sitecore().Field("MyMultiLineTextField")
-@foreach (var lsItem in Model.ListOfItems)
-{
-    <h1>
-        @Html.Sitecore().Field("TitleFieldOfItem1", lsItem)
-    </h1>
-}  
-    *@
+
+     ******************************************************************Access field Types******************************************************************
+    https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/access-a-field-using-the-fieldrenderer.html
+    @Html.Sitecore().Field("MyImageField", new { w = 160, h = 160 })
+    @Html.Sitecore().Field("MyLinkField", new
+    {
+        @class = "red-link"
+    })
+    @Html.Sitecore().Field("MyDateField", new { format = "MMM dd,yyyy" })
+    @Html.Sitecore().Field("MySingleLineTextField", Item)
+    @Html.Sitecore().Field("MyRichTextField")
+    @Html.Sitecore().Field("MyMultiLineTextField")
+    @foreach (var lsItem in Model.ListOfItems)
+    {
+        <h1>
+            @Html.Sitecore().Field("TitleFieldOfItem1", lsItem)
+        </h1>
+    }
+*@

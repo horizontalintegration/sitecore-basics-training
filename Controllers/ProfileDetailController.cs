@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
+using System;
 using System.Web.Mvc;
-using SC_Playground.Models;
-using Sitecore.Data.Fields;
-using Sitecore.Data.Items;
-using Sitecore.Mvc.Presentation;
-using Sitecore.Resources.Media;
 
 
 namespace SC_Playground.Controllers
 {
-  public class ProfileDetailController : Controller
+    public class ProfileDetailController : Controller
   {
     public ActionResult MyProfile()
     {

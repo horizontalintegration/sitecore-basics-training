@@ -21,13 +21,25 @@
     <div id="main-container">
         @Html.Sitecore().Placeholder("header")
         <main>
-            @Html.Sitecore().Placeholder("main")
-            @Html.Sitecore().Rendering("{E87CA4CA-6EB1-4EFB-98C7-8701560A786B}", new
-            {
-                Cacheable = true,
-Cache_VaryByData = true,
-                DataSource = "{1683CE72-DDC6-41CF-A7DB-69AA0110DD75}"
-            })
+            <section class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-4">
+                            @Html.Sitecore().Rendering("{56166971-1E9E-47FC-9484-495EA9A8118C}", new
+                                    {
+                                    Cacheable = true,
+                                    Cache_VaryByData = true,
+                                    DataSource = "{7F892E93-E679-4B8A-8CA3-266C27A7DB72}"
+                                    })
+                        </div>
+                        <div class="col-lg-8">
+                            @Html.Sitecore().Placeholder("main")
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
 
         </main>
         @Html.Sitecore().Placeholder("footer")

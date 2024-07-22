@@ -118,13 +118,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\BreadcrumbController.cs" />
     <Compile Include="Controllers\ProfileDetailController.cs" />
     <Compile Include="Controllers\AboutUsController.cs" />
-    <Compile Include="Controllers\HomepageController.cs" />
-    <Compile Include="Models\BreadcrumbModel.cs" />
+    <Compile Include="Controllers\PromoDetailController.cs" />
     <Compile Include="Models\AboutUsModel.cs" />
-    <Compile Include="Models\HomepageModel.cs" />
+    <Compile Include="Models\PromoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -171,7 +169,6 @@
     <Content Include="Views\Layout\AboutUsLayout.cshtml" />
     <Content Include="Views\Layout\MainLayout.cshtml" />
     <Content Include="Views\ProfileDetail\MyProfile.cshtml" />
-    <Content Include="Views\ProfileDetail\ProfileDetailFull.cshtml" />
     <Content Include="Views\Promo Component\Promo.cshtml" />
     <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
@@ -243,7 +240,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Views\Homepage\Homepage.cshtml" />
+    <Content Include="Views\PromoDetail\GetPromo.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

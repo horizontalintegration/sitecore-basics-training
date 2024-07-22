@@ -5,7 +5,7 @@ using System.Web;
 
 namespace SC_Playground.Models
 {
-    public class HomepageModel
+    public class PromoModel
     {
         public string PromoHeading { get; set; }
         public string PromoDesc { get; set; }
