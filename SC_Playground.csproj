@@ -129,6 +129,7 @@
     <Content Include="Views\AboutUs\AboutUs.cshtml" />
     <Content Include="Views\Two-col\ColumnSplitter.cshtml" />
     <Content Include="Views\Layout\AboutUsLayout.cshtml" />
+    <Content Include="App_Config\Include\SCPlayground\SCPlayground.SiteDefinition.config" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup />
