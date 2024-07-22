@@ -1,0 +1,23 @@
+﻿---
+ID: "46ce7722-a309-4e10-beac-17dc98dd9889"
+Parent: "24a4d4d4-0e5f-49b1-afd7-7207bc6cbc16"
+Template: "2ee92d8d-aa06-4aca-9300-5c8bbe569d0b"
+Path: /sitecore/content/Horizontal Training/SC_Playground/Data/Promos
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T045740Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7ab6d69a-c191-40ad-91a0-03680ef38ac9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T045740Z

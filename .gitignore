@@ -16,5 +16,5 @@
 /obj
 /packages
 /Properties/PublishProfiles
-/serialization
+#/serialization
 *.user

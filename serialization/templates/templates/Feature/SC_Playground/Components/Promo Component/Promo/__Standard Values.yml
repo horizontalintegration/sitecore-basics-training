@@ -1,0 +1,26 @@
+﻿---
+ID: "c2faf68c-7fd4-4834-b2f1-47f848c4903e"
+Parent: "e2328ad1-0b9e-4c03-8afb-9fe52c6ca39e"
+Template: "e2328ad1-0b9e-4c03-8afb-9fe52c6ca39e"
+Path: /sitecore/templates/Feature/SC_Playground/Components/Promo Component/Promo/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T045254Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "6af2d8e6-45ed-4d52-86ad-be58aa973863"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T045915Z
