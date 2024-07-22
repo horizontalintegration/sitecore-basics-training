@@ -1,0 +1,63 @@
+﻿@model DemoSite.Models.BreadcrumbModel
+@using DemoSite.Models
+
+
+@*<nav class="breadcrumb">
+    @foreach (var item in Model.links)
+    {
+
+        if (!item.Equals(Model.links[Model.links.Count - 1]))
+        {
+            <a href="@item.Url">@item.Name</a>
+            <span class="separator">\</span>
+        }
+        else
+        {
+            <a href="@item.Url" class="active">@item.Name</a>
+        }
+    }
+</nav>*@
+
+<header class="page-header bg-media bg-parallax" style="background-image: url('../Images/climbing-events.jpg')">
+    <div class="container">
+        <!-- [Breadcrumb Navigation] -->
+        <ol class="breadcrumb">
+            @{
+                bool flg = false;
+            }
+
+            @foreach (BrItem item in Model.links)
+            {
+                if(item.Name == "Home")
+                {
+                    flg = true;
+                }
+
+                if (flg)
+                {
+                    if (!item.Equals(Model.links[Model.links.Count - 1]))
+                    {
+                        <li><a href="@item.Url">@item.Name</a> </li>
+
+                    }
+                    else
+                    {
+                        <li class="active"><a href="@item.Url">@item.Name</a></li>
+
+                    }
+                }
+
+
+            }
+
+
+        </ol>
+        <!-- [/Breadcrumb Navigation] -->
+    </div>
+</header>
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+
+@{
+    var rc = Sitecore.Mvc.Presentation.RenderingContext.CurrentOrNull;
+    if (rc != null)
+    {
+        var parms = rc.Rendering.Parameters;
+        string btnStyle = parms["ButtonStyle"];
+
+        // Need to write following code incase ButtonStyle field is type of droplink
+        //if(!string.IsNullOrEmpty(btnStyle))
+        //{
+        //    var enumItem = Sitecore.Context.Database.GetItem(btnStyle);
+        //    string btnStyle = enumItem.Fields["Title"].Value;
+        //}
+
+        if (Model != null)
+        {
+            <div class="thumbnail">
+                @Html.Sitecore().Field("Image", Model.Item, new { @class = "img-responsive", @alt = "promoimage", width = "500", height = "333" })
+                <div class="caption">
+                    <h3 class="teaser-heading">
+                        @Html.Sitecore().Field("Title", Model.Item)
+                        @*@Model.Item.Fields["Title"].Value*@
+                    </h3>
+                    @if (Model.Item.Fields["Description"].HasValue || Sitecore.Context.PageMode.IsNormal)
+                    {
+                        <p>
+                            @Html.Sitecore().Field("Description", Model.Item)
+                        </p>
+                    }
+                    else
+                    {
+                        <p>
+                            @Html.Sitecore().Field("Description", Model.Item)
+                        </p>
+                    }
+
+                    @if (!string.IsNullOrEmpty(btnStyle))
+                    {
+                        @Html.Sitecore().Field("Link", Model.Item, new { @class = "btn " + btnStyle })
+                    }
+                    else
+                    {
+                        @Html.Sitecore().Field("Link", Model.Item, new { @class = "btn btn-default" })
+                    }
+                </div>
+            </div>
+        }
+    }
+}
+
+@*******************************************************************Promo HTML******************************************************************
+    <div class="thumbnail">
+        <a href="Event-Detail.html">
+            <img src="../Images/Skiing-the-Himalayas.jpg" class="img-responsive" alt="Skiing in the Himalayas" width="500" height="333">
+        </a>
+        <div class="caption">
+            <h3 class="teaser-heading">Skiing the Himalayas</h3>
+            <p>
+                The Himalayan Mountains offer the highest altitude skiing and snowboarding in the world. Here, you are surrounded by the largest and steepest mountains on earth and the views are unparalleled. Because the mountains are so high, the runs are long. The geographical location and the heavy snowfall make Gulmarg’s ski runs the best in the Himalayas, if not the world. <br>
+                Our journey to Gulmarg from Srinagar is perhaps the most enchanting part of the trip. You will see picturesque villages, spectacular mountain views, and forested slopes on this tour through the unique landscape of the Himalayas.
+            </p>
+            <a href="Event-Detail.html" class="btn btn-default">Read more</a>
+        </div>
+    </div>
+    
+ ******************************************************************Access field Types******************************************************************   
+https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/access-a-field-using-the-fieldrenderer.html
+@Html.Sitecore().Field("MyImageField", new { w = 160, h = 160 })
+@Html.Sitecore().Field("MyLinkField", new
+{
+    @class = "red-link"
+})
+@Html.Sitecore().Field("MyDateField", new { format = "MMM dd,yyyy" })
+@Html.Sitecore().Field("MySingleLineTextField", Item)
+@Html.Sitecore().Field("MyRichTextField")
+@Html.Sitecore().Field("MyMultiLineTextField")
+@foreach (var lsItem in Model.ListOfItems)
+{
+    <h1>
+        @Html.Sitecore().Field("TitleFieldOfItem1", lsItem)
+    </h1>
+}  
+    *@

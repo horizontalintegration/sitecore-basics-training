@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>@Html.Sitecore().Field("Title", new { DisableWebEdit = true })</title>
+    <link rel="stylesheet" type="text/css" href="~/Css/vendor.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Css/niteflight.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Css/addition.css">
+    <link rel="stylesheet" type="text/css" href="~/Css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="~/Css/Difficulty.css">
+    </head>
+<body class="header-static ">
+    <div id="main-container">
+        @Html.Sitecore().Placeholder("header")
+        <main>
+            @Html.Sitecore().Placeholder("main")
+            @Html.Sitecore().Rendering("{E87CA4CA-6EB1-4EFB-98C7-8701560A786B}", new
+            {
+                Cacheable = true,
+Cache_VaryByData = true,
+                DataSource = "{1683CE72-DDC6-41CF-A7DB-69AA0110DD75}"
+            })
+
+        </main>
+        @Html.Sitecore().Placeholder("footer")
+    </div>
+    <script src="~/Scripts/Sitecore.Foundation.Theming.min.js"></script>
+    <script src="~/Scripts/Navigation.js"></script>
+</body>
+</html>

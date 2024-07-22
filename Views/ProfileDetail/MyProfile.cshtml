@@ -1,0 +1,78 @@
+﻿@model Sitecore.Data.Items.Item
+
+@if (Model != null)
+{
+    //https://doc.sitecore.com/xp/en/developers/92/sitecore-experience-manager/access-checklist,-multilist,-treelist,-and-treelistex-fields.html
+
+    <header>
+        <h1>@Html.Sitecore().Field("Name", Model)</h1>
+    </header>
+
+    <div class="well">
+        <p class="text-muted">@Html.Sitecore().Field("DateOfJoining", Model, new { format = "MMM dd,yyyy" })</p>
+    </div>
+    <div class="lead">
+        <p>
+            @Html.Sitecore().Field("MoreDetails", Model)
+        </p>
+    </div>
+    <div class="highlights">
+        <h4>Skills</h4>
+        @{
+            Sitecore.Data.Fields.MultilistField multiselectField = Model.Fields["Skills"];
+            Sitecore.Data.Items.Item[] items = multiselectField.GetItems();
+            if (items != null && items.Length > 0)
+            {
+                <ul>
+                    @foreach (var lsItem in items)
+                    {
+                        <li>
+                            @lsItem.Fields["Title"].Value
+                        </li>
+                    }
+                </ul>
+            }
+        }
+
+    </div>
+    <hr />
+    <div class="comments">
+        <h4>Designation</h4>
+        @{
+            Sitecore.Data.Fields.ReferenceField referenceField = Model.Fields["Designation"];
+            if (referenceField != null)
+            {
+                Sitecore.Data.Items.Item designationItem = referenceField.TargetItem;
+                <div><strong> @designationItem.Fields["Title"].Value</strong></div>
+            }
+        }
+        <h4>LinkedIn</h4>
+        @{
+            Sitecore.Data.Fields.LinkField linkField = Model.Fields["LinkedIn"];
+            string url = String.Empty;
+            switch (linkField.LinkType)
+            {
+                case "internal":
+                case "external":
+                case "mailto":
+                case "anchor":
+                case "javascript":
+                    url = linkField.Url;
+                    break;
+                case "media":
+                    Sitecore.Data.Items.MediaItem media = new Sitecore.Data.Items.MediaItem(linkField.TargetItem);
+                    url = Sitecore.StringUtil.EnsurePrefix('/',
+                    Sitecore.Resources.Media.MediaManager.GetMediaUrl(media));
+                    break;
+                case "":
+                    break;
+                default:
+                    string message = String.Format("{0} : Unknown link type {1}", this.GetType(), linkField.LinkType); Sitecore.Diagnostics.Log.Error(message, this);
+                    break;
+            }
+            <div><strong>@url</strong></div>
+        }
+
+    </div>
+}
+
