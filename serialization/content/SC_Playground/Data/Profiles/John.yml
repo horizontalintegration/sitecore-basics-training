@@ -1,0 +1,46 @@
+﻿---
+ID: "7b068da7-1529-46c4-befe-590a2effd4bc"
+Parent: "a64c1b57-f61f-48a6-ac07-107c11c9c493"
+Template: "1a614423-81ce-430e-b368-3341275e754d"
+Path: /sitecore/content/Horizontal Training/SC_Playground/Data/Profiles/John
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T134152Z
+    - ID: "38f8e48a-30a1-4047-987c-23da6b13da9d"
+      Hint: DateOfJoining
+      Value: 20230806T183000Z
+    - ID: "4fdf298a-782a-4443-ad6b-be9d5e767de8"
+      Hint: MoreDetails
+      Value: |
+        <strong style="color: #000000; background-color: #ffffff; margin: 0px; padding: 0px; text-align: justify;">Lorem Ipsum</strong><span style="color: #000000; background-color: #ffffff; text-align: justify;">&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+    - ID: "5be38fe0-9a55-4204-a5de-fc1ed9bc917c"
+      Hint: Designation
+      Value: "{0A134CB3-D2E1-4A4D-BC66-B1B9231CCA1A}"
+    - ID: "6f7b8a05-6fb7-419b-910b-b34d2a473407"
+      Hint: Skills
+      Value: |
+        {E62EE02F-1862-4164-A902-71F18EEF7CA9}
+        {8B7795EA-109B-45D8-BFBE-9F228A2AC237}
+        {904D33C2-33DB-4F79-89BC-9AED330F5C86}
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "fcaccbd7-0e84-41d7-970f-2f5d09709089"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240722T122806Z
+    - ID: "ea140c26-2853-4cf1-8adc-745159cd4aa4"
+      Hint: Name
+      Value: "John Doe - Profile Component using Dynamic Binding"
+    - ID: "f7b73d68-2c03-4cc4-9524-945afec4725c"
+      Hint: LinkedIn
+      Value: |
+        <link text="John" linktype="external" url="https://wp.stolaf.edu/pipercenter/how-to-guides/linkedin-guide/what-is-a-linkedin-profile/" anchor="" target="_blank" />
