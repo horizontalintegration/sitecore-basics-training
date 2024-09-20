@@ -2,7 +2,7 @@
 using Sitecore.Publishing.Pipelines.Publish;
 using System.Linq;
 
-namespace PipelineProcessorsExample.Pipelines.Publishing
+namespace SC_Playground.Pipelines.Publishing
 {
     public class CustomPublishLogProcessor : PublishProcessor
     {
