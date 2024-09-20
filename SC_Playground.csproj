@@ -120,15 +120,21 @@
   <ItemGroup>
     <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\HomepageController.cs" />
+    <Compile Include="Events\ItemEvents.cs" />
     <Compile Include="Models\AboutUsModel.cs" />
     <Compile Include="Models\HomepageModel.cs" />
+    <Compile Include="Pipelines\Publishing\CustomPublishItemLogProcessor.cs" />
+    <Compile Include="Pipelines\Publishing\CustomPublishLogProcessor.cs" />
+    <Compile Include="Pipelines\Publishing\CustomUpdateStatisticsPublishProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schedulers\CreateAndPublishItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Layout\DefaultLayout.cshtml" />
     <Content Include="Views\AboutUs\AboutUs.cshtml" />
     <Content Include="Views\Two-col\ColumnSplitter.cshtml" />
     <Content Include="Views\Layout\AboutUsLayout.cshtml" />
+    <Content Include="App_Config\Include\z.PipelineProcessorsExample.Foundation.config" />
     <None Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup />
