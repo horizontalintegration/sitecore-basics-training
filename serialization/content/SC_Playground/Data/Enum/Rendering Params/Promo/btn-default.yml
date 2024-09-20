@@ -1,0 +1,23 @@
+﻿---
+ID: "5b19d44b-1a76-4ca0-b830-2e58fd9ba75d"
+Parent: "96d393a0-7855-42b5-b1f4-153258459ee0"
+Template: "c8dab329-9dee-4494-a1f4-17f12715c73f"
+Path: "/sitecore/content/Horizontal Training/SC_Playground/Data/Enum/Rendering Params/Promo/btn-default"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240628T104912Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a19d85de-81cd-4d86-96c1-ab7fa7cc082b"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240628T111524Z

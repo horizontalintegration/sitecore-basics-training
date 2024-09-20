@@ -1,0 +1,23 @@
+﻿---
+ID: "0a134cb3-d2e1-4a4d-bc66-b1b9231cca1a"
+Parent: "b6beb021-dea8-4a50-bdbf-ec2f00fa8ae4"
+Template: "c8dab329-9dee-4494-a1f4-17f12715c73f"
+Path: /sitecore/content/Horizontal Training/SC_Playground/Data/Enum/Designation/Software Developer
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T133941Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "aa0b6a7e-7d0b-4d02-8903-33a5ced7ae01"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T133941Z

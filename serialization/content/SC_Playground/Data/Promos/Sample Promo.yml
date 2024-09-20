@@ -1,0 +1,121 @@
+﻿---
+ID: "855eb8f7-6a96-4748-ba3a-08fee2fee551"
+Parent: "46ce7722-a309-4e10-beac-17dc98dd9889"
+Template: "e2328ad1-0b9e-4c03-8afb-9fe52c6ca39e"
+Path: /sitecore/content/Horizontal Training/SC_Playground/Data/Promos/Sample Promo
+SharedFields:
+- ID: "08db99b3-f8b5-4d94-8f7b-73b79008ae6a"
+  Hint: Image
+  Value: |
+    <image mediaid="{094AED03-02E7-4868-80CB-19926661FB77}" alt="demo" height="" width="" hspace="" vspace="" />
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Promo 1
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: Sample Promo
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T045941Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db9509fb-4d27-4ffc-9d43-dae1bfbca458"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T050756Z
+  - Version: 2
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: Sample Promo1
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T051502Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "7883116d-8821-4c46-ba48-11127e50ab6c"
+    - ID: "96953e72-69c7-41d2-89c3-b5863e7529f1"
+      Hint: Description
+      Value: <p> Hello </p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20240627T051502Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T052129Z
+- Language: "es-MX"
+  Fields:
+  - ID: "292c7c1c-f4ea-4071-8126-953ffb1f3841"
+    Hint: Link
+    Value: |
+      <link class="" querystring="" id="{02654E03-34F4-4FD3-8DA3-C5672A9679E2}" anchor="" target="" title="" linktype="internal" text="Home" url="/Horizontal Training/SC_Playground/Home" />
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: Sample Promo
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T051920Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b1241c79-1c66-48c7-bf3f-30d25383beb6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240627T052221Z
+  - Version: 2
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: Sample Promo
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240627T052254Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "788391c2-5620-4ade-99c8-d846eebcd536"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20240627T052254Z
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240722T101825Z

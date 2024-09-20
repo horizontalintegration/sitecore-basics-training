@@ -1,0 +1,50 @@
+﻿---
+ID: "12eba452-2460-41bd-87e5-beadc3567541"
+Parent: "268e256f-6455-4f4c-b1c5-21ac1a69f787"
+Template: "268e256f-6455-4f4c-b1c5-21ac1a69f787"
+Path: /sitecore/templates/Project/SCPlayground/Page Templates/Home/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{9AE55FA6-EED9-4572-B329-DE3F4B321A1C}"
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{C4225D92-EBAB-4DA2-ABDF-834C7B0DAF11}">
+        <r
+          ds="{7B068DA7-1529-46C4-BEFE-590A2EFFD4BC}"
+          id="{C628A423-C85C-4451-B12B-FCDB48792CD3}"
+          par=""
+          ph="main"
+          uid="{B81FAC97-F71F-4CF4-9719-39305A49086B}"
+          ccb="Clear on publish" />
+      </d>
+      <d
+        id="{0B4A31C9-712D-4578-A396-2DDC0F34B63A}"
+        l="{72C595AD-68BB-44BC-B5CD-2A857039515F}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230104T105450Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b0b0b9e9-1382-4a13-96ab-d5a9f9c1cb9c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240722T105304Z

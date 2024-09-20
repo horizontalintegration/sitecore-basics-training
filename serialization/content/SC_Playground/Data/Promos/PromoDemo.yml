@@ -1,0 +1,49 @@
+﻿---
+ID: "1683ce72-ddc6-41cf-a7db-69aa0110dd75"
+Parent: "46ce7722-a309-4e10-beac-17dc98dd9889"
+Template: "e2328ad1-0b9e-4c03-8afb-9fe52c6ca39e"
+Path: /sitecore/content/Horizontal Training/SC_Playground/Data/Promos/PromoDemo
+SharedFields:
+- ID: "08db99b3-f8b5-4d94-8f7b-73b79008ae6a"
+  Hint: Image
+  Value: |
+    <image mediaid="{04DAD0FD-DB66-4070-881F-17264CA257E1}" alt="cover-img" height="" width="" hspace="" vspace="" />
+Languages:
+- Language: en
+  Fields:
+  - ID: "292c7c1c-f4ea-4071-8126-953ffb1f3841"
+    Hint: Link
+    Value: |
+      <link class="" querystring="" id="{02654E03-34F4-4FD3-8DA3-C5672A9679E2}" anchor="" title="" linktype="internal" text="Click Me" url="/Horizontal Training/SC_Playground/Home" />
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a1fa76a-d87c-4ff7-bead-bb6bfb404999"
+      Hint: Title
+      Value: Home Page
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240701T124005Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "e38ac8db-b619-4b2f-ac9d-3ed59e0f38ce"
+    - ID: "96953e72-69c7-41d2-89c3-b5863e7529f1"
+      Hint: Description
+      Value: |
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        <p>Jeel</p>
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240722T101825Z
